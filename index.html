@@ -89,6 +89,13 @@ FILL THE FORM TO REDEEM THE GIFT AMOUNT
   let arrm =[90,110,150,180,130,140,100,160,170,190,120,]
   let random1 = arrm[Math.floor(Math.random() * (arrm.length))];
   document.getElementById("won").innerHTML =random1;
+
+
+  window.addEventListener('beforeunload', ()=>{
+    event.preventDefault();
+     event.returnValue = "";
+    })
+
  
  </script>
 
