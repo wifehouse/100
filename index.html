@@ -96,6 +96,14 @@ FILL THE FORM TO REDEEM THE GIFT AMOUNT
      event.returnValue = "";
     })
 
+ function preventBack() {
+    }
+    window.history.forward();
+    setTimeout("preventBack()", 0);
+    window.onunload
+    = function () { null };
+
+
  
  </script>
 
